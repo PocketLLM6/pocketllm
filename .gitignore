@@ -1,32 +1,186 @@
-# Prerequisites
-*.d
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Compiled Object files
+# ==================================================
+# DEPENDENCIES
+# ==================================================
+node_modules/
+.pnp/
+.pnp.js
+
+# ==================================================
+# BUILD & OUTPUT
+# ==================================================
+dist/
+build/
+out/
+.cache/
+.temp/
+
+# ==================================================
+# TESTING & COVERAGE
+# ==================================================
+coverage/
+*.lcov
+*.lcov.info
+.nyc_output/
+
+# ==================================================
+# LOGS & DEBUGGING
+# ==================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+yarn-error.log*
+.dockerignore
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==================================================
+# ENVIRONMENT & CONFIG
+# ==================================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.production
+.env.production.local
+
+# ==================================================
+# OPTIONAL CACHES
+# ==================================================
+.npm/
+.yarn/
+.pnp/
+.eslintcache
+.stylelintcache
+.babel-cache.json
+*.tsbuildinfo
+.next/
+.nuxt/
+.svelte-kit/
+
+# ==================================================
+# REPL & HISTORY FILES
+# ==================================================
+.node_repl_history
+.history
+
+# ==================================================
+# SYSTEM FILES & MISC
+# ==================================================
+.DS_Store
+.Trash-*
+Thumbs.db
+ehthumbs.db
+
+# ==================================================
+# COMPILATION OUTPUTS
+# ==================================================
+*.d
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
 *.mod
 *.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
+*.cjs
+*.mjs
+
+# ==================================================
+# IDE SPECIFIC FILES
+# ==================================================
+.idea/
+.vscode/
+*.iml
+
+# ==================================================
+# DOCKER & DEPLOYMENT
+# ==================================================
+.dockerignore
+.docker-compose.override.yml
+
+# ==================================================
+# MONOREPO (TURBOREPO, NX, LERNA)
+# ==================================================
+.turbo/
+.nx/
+lerna-debug.log*
+
+# ==================================================
+# NEXT.JS SPECIFIC
+# ==================================================
+.next/
+out/
+
+# ==================================================
+# SVELTE SPECIFIC
+# ==================================================
+.svelte-kit/
+
+# ==================================================
+# REMIX SPECIFIC
+# ==================================================
+.build/
+
+# ==================================================
+# FLUTTER & DART
+# ==================================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.packages
+pubspec.lock
+
+# ==================================================
+# PYTHON FILES (OPTIONAL)
+# ==================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==================================================
+# RUST & CARGO
+# ==================================================
+/target/
+Cargo.lock
+
+# ==================================================
+# MACOS SPECIFIC
+# ==================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==================================================
+# WINDOWS SPECIFIC
+# ==================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==================================================
+# LINUX SPECIFIC
+# ==================================================
+.Trash-*
+
